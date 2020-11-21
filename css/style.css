@@ -1,0 +1,164 @@
+ body{
+  font-family: "arial";
+  background-color: #FAFAFA;
+  padding:0;
+}
+section #welcomePage{
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main #images{
+  height: 630px;
+  justify-items: center;
+  display: flex;
+  padding: 10px;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  background-image: url("../img/instagram-celular.png");
+  background-size: cover; 
+  overflow: hidden;
+}
+
+main #images-slide{
+  margin-top: 68px;
+  margin-left: 44px;
+  height: 460px;
+  width: 257px;
+  border: 3px solid black;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.slideshow{
+  display: none;
+  width: 100%;
+  flex-shrink: 0;
+}
+main #mobile-img{
+  width: 100%;
+  align-self: center;
+}
+
+main #app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  flex-shrink: 0;  
+}
+
+.group{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width:100%;
+  background-color: #FFF;
+  border: 1px solid #DBDBDB;
+}
+
+#login{
+  width: 100%;
+  padding: 30px 0 10px 0;
+}
+
+#login #logo{
+  width: 200px;
+}
+#same-account{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width:100%;
+}
+#profile-pic{
+  width:102px;
+  height:102px;
+  border: 1px solid #efefef;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px 0;
+  
+}
+#profile-pic img{
+  width: 100%;
+}
+
+#login #continueAs{
+  background-color: #0095f6;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  color:#FFF;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.blue-text{
+  color:#0095F6;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+#get-app{
+  background-color: transparent;
+  border: none;
+}
+
+#get-app-buttons{
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+}
+.app-download{
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.app-download:nth-child(1){
+  background-image: url('../img/apple-button.png');
+}
+.app-download:nth-child(2){
+  background-image: url('../img/googleplay-button.png');
+}
+
+footer{
+  margin-top: 30px;
+  text-align: center;
+  color: grey;
+}
+
+@media(max-width:876px){
+  main #images{
+    display: none;
+  }
+}
+@media(max-width:600px){
+   .group{
+    background-color: #FAFAFA;
+    border: 0;
+  }
+
+  #get-app-buttons{
+    flex-direction: column;
+    align-items:center;
+  }
+}
